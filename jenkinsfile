@@ -14,7 +14,7 @@ pipeline {
 
         stage("Checkout from SCM"){
                 steps {
-                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/aniwardhan/DevOps-Project.git'
+                    git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/ashwinkarthik007/Dev-sample-pro.git'
                 }
         }
 
@@ -30,4 +30,9 @@ pipeline {
                  sh "mvn test"
            }
        }
-   
+
+
+
+
+       }
+ }
